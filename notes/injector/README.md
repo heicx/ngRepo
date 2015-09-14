@@ -57,6 +57,7 @@ app.controller("MyCtrl", ["$scope", MyCtrl]);
 
 ### **创建injector**
 
+<<<<<<< HEAD
 - 首先通过bindJQuery()绑定JQUery或者jqLite，实现angular.element。
 - 由publishExternalAPI(angular)暴露api，挂载一些通过方法，如：angular.forEach，实现angular.module，并定义模块ng，以及ngLocale。angular.module主要通过setupModuleLoader()方法实现。
 - 当dom ready时，开始angular的初始化操作。如下：
@@ -70,3 +71,6 @@ jqLite(document).ready(function() {
 - 在angular初始化时会再angularInit方法中调用bootstrap()方法进行injector模块注入。
 - bootstrap()方法中会调用createInjector()方法来实现provider、instance两个对象的Cache，用于接收createIntervalInjector()方法的创建结果。
 - createIntervalInjector()方法会创建出instanceInjector对象。
+=======
+- 
+>>>>>>> a442c93de75eae8f7f697207068b0b525b57b143
