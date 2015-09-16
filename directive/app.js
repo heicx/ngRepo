@@ -1,4 +1,4 @@
-define(["angular", "zepto"], function(angular, $) {
+define(["angular"], function(angular) {
 	angular.module("myApp", [])
 	.factory('property', function(){
 		return {
@@ -12,13 +12,4 @@ define(["angular", "zepto"], function(angular, $) {
 			console.log(property.name);
 		});
 	}]);
-
-	var $div = $('<div ng-controller="testCtrl">{{content.label}}</div>');
-	$(document.body).append($div);
-	console.log(angular.element(document).injector());
-
-	angular.element(document).injector().invoke(function($compile) {
-		var scope = angular.element($div).scope();
-	  	$compile($div)(scope);
-	});
 });

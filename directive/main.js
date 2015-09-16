@@ -2,7 +2,7 @@ require.config({
 	paths: {
 		"angular": "../bower_components/angular/angular",
 		"angular-route": "../bower_components/angular-route/angular-route",
-		"zepto": "../node_modules/jquery/dist/jquery"
+		"jquery": "../node_modules/jquery/dist/jquery"
 	},
 	shim: {
 		"angular": {
