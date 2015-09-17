@@ -1,15 +1,11 @@
 define(["angular"], function(angular) {
-	angular.module("myApp", [])
-	.factory('property', function(){
-		return {
-			name: "heicx"
-		};
-	})
-	.controller("MyCtrl", ["$scope", "$injector", function($scope, $injector) {
-		$scope.name = "test";
+	
 
-		$injector.invoke(function(property) {
-			console.log(property.name);
-		});
+	var module = angular.module("myApp", []);
+	module.controller("MyCtrl1", ["$scope", function($scope) {
+		console.log($scope);
+	}]);
+	module.controller("MyCtrl", ["$scope", function($scope) {
+		console.log($scope);
 	}]);
 });
