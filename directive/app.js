@@ -1,15 +1,4 @@
 define(["angular"], function(angular) {
-<<<<<<< HEAD
-	
-
-	var module = angular.module("myApp", []);
-	module.controller("MyCtrl1", ["$scope", function($scope) {
-		console.log($scope);
-	}]);
-	module.controller("MyCtrl", ["$scope", function($scope) {
-		console.log($scope);
-	}]);
-=======
 	angular.module("myApp", [])
 	.provider("age", function() {
 		this.age = 18;
@@ -41,5 +30,4 @@ define(["angular"], function(angular) {
 			}
 		}
 	});
->>>>>>> 712f93d08971ee6bebdda5a82c3e34c8fa96b126
 });
