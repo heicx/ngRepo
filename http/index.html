@@ -4,10 +4,21 @@
 	<title>http</title>
 	<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 	<script type="text/javascript" src="index.js"></script>
+	<style type="text/css">
+		body .section span{
+			width:100px;
+			height:100px;
+			line-height:100px;
+			text-align: center;
+			display:block;
+			background:pink;
+		}
+	</style>
 </head>
 <body>
-	<span style="width:100px;height:100px;display:block;background:pink;" ng-click="fetch()"></span>
-	<div jxb-bind-compiled-html="htmlvariable">
-</div>
+	<div ng-controller="HttpCtrl" class="section">
+		<span ng-click="fetch()">click me</span>
+		<customer sb="data"></customer>
+	</div>
 </body>
 </html>
